@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "110643225496",
+    "firebase_url": "https://emailauthenticationpro.firebaseio.com",
+    "project_id": "emailauthenticationpro",
+    "storage_bucket": "emailauthenticationpro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110643225496:android:7a55e9c7bfb531f66fc1ed",
+        "android_client_info": {
+          "package_name": "com.example.emailauthenticationpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110643225496-ah1cv0o21fi0cjlnfa455mmmnrdkjhr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUjds5O58ybslwaLWFC-f0QbnbwJnCEl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110643225496-ah1cv0o21fi0cjlnfa455mmmnrdkjhr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
