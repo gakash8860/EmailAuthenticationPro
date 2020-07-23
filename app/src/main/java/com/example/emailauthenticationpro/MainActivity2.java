@@ -13,6 +13,7 @@ import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -31,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
     EditText epass2;
     EditText ephone;
     EditText elast;
-    EditText date;
+    TextView dob;
     int month,year,day;
     RadioGroup rgroup;
     CheckBox cb;
@@ -43,7 +44,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        date=findViewById(R.id.date);
+        dob=findViewById(R.id.dob);
         mAuth = FirebaseAuth.getInstance();
         ename=findViewById(R.id.tname);
         email1=findViewById(R.id.tmail);
@@ -54,10 +55,10 @@ public class MainActivity2 extends AppCompatActivity {
         rgroup=findViewById(R.id.rg);
         cb=findViewById(R.id.checkBox);
         b1=findViewById(R.id.button);
-        date.setOnClickListener(new View.OnClickListener() {
+        dob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                isEmpty();
+                getDate();
             }
         });
 
@@ -78,7 +79,7 @@ public class MainActivity2 extends AppCompatActivity {
         DatePickerDialog dialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                date.setText(dayOfMonth+ " "+(month+1)+" -"+year);
+                dob.setText("Date of Birth : "+dayOfMonth+ "-"+(month+1)+" -"+year);
             }
         },day,month,year);
         dialog.show();

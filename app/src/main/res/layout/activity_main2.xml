@@ -64,45 +64,20 @@
         android:ems="10"
         android:hint="Re-Enter Your Password"
         android:inputType="textPassword" />
-    <TextView
-        android:id="@+id/dob"
-        android:layout_width="141dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Date of Birth"
-        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="62dp"
+        android:layout_height="39dp"
         android:orientation="horizontal">
 
-
-        <EditText
-            android:id="@+id/date"
-            android:layout_width="87dp"
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="date"
-            android:text="Date" />
-
-        <EditText
-            android:id="@+id/month"
-            android:layout_width="95dp"
-            android:layout_height="wrap_content"
-
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Month" />
-
-        <EditText
-            android:id="@+id/year"
-            android:layout_width="152dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="numberSigned"
-            android:text="Year" />
+            android:text="Date of Birth"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
